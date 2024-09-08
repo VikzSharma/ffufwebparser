@@ -4,7 +4,7 @@
 
 **FFUF Web Parser** is a web-based tool built using **React** and **Node.js** that allows users to upload FFUF JSON files, apply a variety of filters, and export the filtered results to an Excel file. The tool supports filtering based on status codes, response data, lines, length, and URLs (including regex filtering). It also provides the ability to view, manipulate, and extract valuable information from FFUF fuzzing results.
 
-![FFUF Web Parser Logo](./public/logo.png)
+![FFUF Web Parser Logo](./frontend/public/logo.png)
 
 ## Features
 
