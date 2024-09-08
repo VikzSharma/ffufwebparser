@@ -14,16 +14,23 @@ const FileUpload = () => {
   };
 
   const handleUpload = async () => {
-    const formData = new FormData();
-    formData.append('file', file);
-    
-    try {
-      const response = await axios.post('/upload', formData);
-      setFilteredData(response.data);
-    } catch (error) {
-      console.error('File upload error', error);
-    }
-  };
+  const formData = new FormData();
+  formData.append('file', file);
+  
+  try {
+    const query = new URLSearchParams({
+      statusFilter,  // Pass the status filter from state
+      minSize,       // Pass the min size filter
+      maxSize        // Pass the max size filter
+    }).toString();
+
+    const response = await axios.post(`ffuf/upload?${query}`, formData);  // Append query params to the URL
+    setFilteredData(response.data);
+  } catch (error) {
+    console.error('File upload error', error);
+  }
+};
+
 
   return (
     <Container className="mt-5">
