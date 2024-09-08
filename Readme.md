@@ -61,22 +61,12 @@
    npm install
    ```
 
-### Start the Backend Server:
-
-Go to the backend directory and run:
-
-   ```bash
-   npm start
-   ```
-
-This will start the server at `http://localhost:3000`.
-
-### Start the Frontend App:
+### Start the Web App:
 
 Go to the frontend directory and run:
 
    ```bash
-   npm start
+   chmod +x run.sh && ./run.sh
    ```
 
 This will launch the React app at `http://localhost:3001`.
