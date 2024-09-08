@@ -1,61 +1,93 @@
-.App {
-  text-align: center;
+/* Custom styles for the table and filters */
+
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.scrollable-url {
+  max-width: 400px;
+  white-space: nowrap;
+  overflow-x: auto;
+  text-overflow: ellipsis;
+  cursor: text;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.scrollable-url::-webkit-scrollbar {
+  height: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.scrollable-url::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.scrollable-url::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* Custom styling for the dashboard */
-body {
-  background-color: #f8f9fa;
+/* added now
+/* Logo moved to the top-left and resized */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-h1 {
+.logo {
+  max-width: 160px;  /* Make the logo smaller */
+  height: auto;
+}
+
+/* Center and increase the space for main content */
+.main-content {
+  margin-top: 100px;  /* Adjust spacing to make room for the logo */
+}
+
+.display-4 {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+/* Footer styling */
+footer h6 {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+footer a {
   color: #007bff;
-  font-size: 2.5rem;
-  text-align: center;
+  text-decoration: none;
 }
 
-.container {
-  margin-top: 50px;
+footer a:hover {
+  text-decoration: underline;
 }
 
-.table {
-  margin-top: 30px;
+/* Add more padding for file upload */
+.file-upload-section {
+  margin-top: 40px;
 }
 
-button {
-  background-color: #007bff;
-  color: white;
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .logo {
+    max-width: 60px;
+  }
 }
