@@ -9,7 +9,7 @@
 
 ## Features
 
-<img src="./dashboard.png" alt="Logo" width="200"/>
+<img src="./Dashboard.png" alt="Logo" width="200"/>
 
 
 - **Upload FFUF JSON**: Upload FFUF output files for processing.
