@@ -9,6 +9,9 @@
 
 ## Features
 
+<img src="./dashboard.png" alt="Logo" width="200"/>
+
+
 - **Upload FFUF JSON**: Upload FFUF output files for processing.
 - **Filtering Options**:
   - Filter by status code.
