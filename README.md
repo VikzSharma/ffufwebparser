@@ -44,7 +44,7 @@
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/ffuf-web-parser.git
+   git clone https://github.com/vikzsharma/ffuf-web-parser.git
    cd ffuf-web-parser
    ```
 
