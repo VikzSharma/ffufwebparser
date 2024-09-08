@@ -34,6 +34,7 @@
 - **Node.js**: Ensure that Node.js is installed (v12+ recommended).
 - **npm**: Node package manager should also be installed.
 
+
 ### Installation
 
 1. **Clone the repository**:
@@ -41,90 +42,114 @@
    ```bash
    git clone https://github.com/your-username/ffuf-web-parser.git
    cd ffuf-web-parser
+   ```
 
-Install dependencies for both the frontend and backend.
+2. Install dependencies for both the frontend and backend.
 
-Backend:
+**Backend**:
 
-bash
-Copy code
-cd backend
-npm install
-Frontend:
+   ```bash
+   cd backend
+   npm install
+   ```
 
-bash
-Copy code
-cd ../frontend
-npm install
-Start the Backend Server:
+**Frontend**:
+
+   ```bash
+   cd ../frontend
+   npm install
+   ```
+
+### Start the Backend Server:
 
 Go to the backend directory and run:
 
-bash
-Copy code
-npm start
-This will start the server at http://localhost:3000.
+   ```bash
+   npm start
+   ```
 
-Start the Frontend App:
+This will start the server at `http://localhost:3000`.
+
+### Start the Frontend App:
 
 Go to the frontend directory and run:
 
-bash
-Copy code
-npm start
-This will launch the React app at http://localhost:3001.
+   ```bash
+   npm start
+   ```
 
-Usage
-Upload a JSON File: After starting the app, navigate to the File Upload section and select the FFUF JSON file you want to parse.
+This will launch the React app at `http://localhost:3001`.
 
-Apply Filters:
+---
 
-Filter by status code, words, lines, response size, or even URL regex.
-Use the matching filters for more advanced options.
-View Results: The filtered results will be displayed in a responsive table. Long URLs can be scrolled horizontally without breaking the layout.
+### Usage
 
-Export to Excel: Once filtered, you can export the results to an Excel file by clicking the Export to Excel button.
+- **Upload a JSON File**: After starting the app, navigate to the File Upload section and select the FFUF JSON file you want to parse.
 
-File Structure
-graphql
-Copy code
+- **Apply Filters**:
+  - Filter by status code, words, lines, response size, or even URL regex.
+  - Use the matching filters for more advanced options.
+
+- **View Results**: The filtered results will be displayed in a responsive table. Long URLs can be scrolled horizontally without breaking the layout.
+
+- **Export to Excel**: Once filtered, you can export the results to an Excel file by clicking the Export to Excel button.
+
+---
+
+### File Structure
+
+```graphql
 ffuf-web-parser/
-├── backend/                      # Backend (Node.js)
-│   ├── app.js                    # Main Express server
-│   ├── package.json              # Backend dependencies
+├── backend/            # Backend (Node.js)
+│   ├── app.js          # Main Express server
+│   ├── package.json    # Backend dependencies
 │   └── routes/
-│       └── ffuf.js               # Route for processing uploads and filters
-├── frontend/                     # Frontend (React)
+│       └── ffuf.js     # Route for processing uploads and filters
+├── frontend/           # Frontend (React)
 │   ├── public/
-│   │   └── index.html            # Main HTML file
-│   │   └── logo.png              # Logo for the app
+│   │   └── index.html  # Main HTML file
+│   │   └── logo.png    # Logo for the app
 │   ├── src/
 │   │   ├── components/
-│   │   │   └── FileUpload.js     # Main component for file uploads and filtering
+│   │   │   └── FileUpload.js # Main component for file uploads and filtering
 │   │   ├── services/
-│   │   │   └── api.js            # Axios service for API calls
-│   │   ├── index.js              # Entry point for the React app
-│   │   ├── App.js                # Main App component
-│   │   └── App.css               # Custom CSS for the app
-└── README.md                     # Project documentation
-Screenshots
-Upload and Filters
+│   │   │   └── api.js   # Axios service for API calls
+│   │   ├── index.js     # Entry point for the React app
+│   │   ├── App.js       # Main App component
+│   │   └── App.css      # Custom CSS for the app
+└── README.md           # Project documentation
+```
 
-Filtered Results
+---
 
-Export to Excel
+### Screenshots
 
-Contributing
+- **Upload and Filters**
+- **Filtered Results**
+- **Export to Excel**
+
+---
+
+### Contributing
+
 Contributions are welcome! If you have suggestions, improvements, or want to add new features, feel free to open a pull request or raise an issue.
 
-How to Contribute:
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes.
-Commit and push your changes (git push origin feature-branch).
-Open a pull request.
-License
+#### How to Contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit and push your changes (`git push origin feature-branch`).
+5. Open a pull request.
+
+---
+
+### License
+
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Contact
-For questions or suggestions, feel free to reach out via GitHub Issues.
+---
+
+### Contact
+
+For questions or suggestions, feel free to reach out via GitHub Issues or hello@agilehunt.com .
