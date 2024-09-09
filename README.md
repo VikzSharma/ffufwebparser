@@ -9,7 +9,7 @@
 
 ## Features
 
-<img src="./dashboard.png" alt="Logo" width="200"/>
+<img src="./Dashboard.png" alt="Logo" width="900"/>
 
 
 - **Upload FFUF JSON**: Upload FFUF output files for processing.
@@ -44,7 +44,7 @@
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/ffuf-web-parser.git
+   git clone https://github.com/vikzsharma/ffuf-web-parser.git
    cd ffuf-web-parser
    ```
 
