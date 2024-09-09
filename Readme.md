@@ -124,6 +124,10 @@ ffuf-web-parser/
 
 ---
 
+### Credits
+
+Ffuf (https://github.com/ffuf/ffuf) 
+
 ### Contributing
 
 Contributions are welcome! If you have suggestions, improvements, or want to add new features, feel free to open a pull request or raise an issue.
